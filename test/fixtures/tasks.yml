@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: one
+  compound_rate: 1.5
+  compound_time_block: 
+  start_date: 
+  goal_end_date: 
+  goal_success_rate: 
+  rep_time_block: 
+  reps_per_time_block: 
+
+two:
+  name: MyString
+  category: two
+  compound_rate: 1.5
+  compound_time_block: 
+  start_date: 
+  goal_end_date: 
+  goal_success_rate: 
+  rep_time_block: 
+  reps_per_time_block: 
