@@ -1,0 +1,10 @@
+<h1><%= @category.name %></h1>
+<h6>There personal statement e.g. their why</h6>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cumque vel quod qui blanditiis fugiat atque earum labore! Error distinctio quae inventore nobis rerum voluptatibus tenetur quasi natus facere illum?</p>
+<% @task.each do |task| %>
+  <%= link_to "#{task.name}", category_task_path(@category, task)%>
+<% end %>
+<%= link_to 'Edit', edit_category_path(@category) %>
+<%= link_to 'Delete this category', @categories, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to "Add a Task", new_category_task_path(@category)%>
+<%= link_to "Categories", categories_path %>

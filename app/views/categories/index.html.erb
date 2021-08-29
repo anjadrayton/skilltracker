@@ -1,0 +1,15 @@
+<h1>Categories</h1>
+<h3>What areas of your life are focused on improving?</h3>
+<div class = "categories">
+  <ul>
+    <% @categories.each do |cat| %>
+    <li>
+      <ul><h6><%= link_to "#{cat.name}", category_path(cat)%></h6>
+      <li><p>tasks: <%= Task.where(category_id: cat).count %></p></li>
+      </ul>
+    </li>
+    <% end %>
+  </ul>
+</div>
+<br>
+<%= link_to "New Category", new_category_path%>
